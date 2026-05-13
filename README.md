@@ -58,10 +58,3 @@ GitHub Actions workflow (`.github/workflows/ci.yml`) runs compileall, `main.py -
 ## Security note on checkpoints
 
 Tokenizer checkpoints use **pickle**. Only load checkpoints you trust. See `docs/CHECKPOINT_SECURITY.txt`.
-
-## License
-
-Add your preferred license file at the repository root if you distribute this project publicly.
-=======
-# VoynichNet
->>>>>>> fa6ced60246f9600a4274738b18d3e93a53d6bf0
