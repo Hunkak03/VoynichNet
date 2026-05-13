@@ -1,4 +1,4 @@
-# Voychinet
+# VoynichNet
 
 Interactive terminal application for **corpus import**, **character-level language model training** (small Transformer), **text generation**, **perplexity scoring**, and **cryptanalytic-style corpus stats** (entropy, IC, Kasiski-style repeats).
 
