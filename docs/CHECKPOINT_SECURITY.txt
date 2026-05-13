@@ -1,0 +1,20 @@
+Voychinet checkpoint security (public / distribution)
+======================================================
+
+Checkpoints contain:
+
+  • model.pth   — PyTorch state dict (tensor data only; load with weights_only where supported).
+  • tokenizer.pkl — Python pickle of the VoynichTokenizer object.
+
+Pickle loading can execute arbitrary code if the file was crafted by an attacker.
+Therefore:
+
+  • Only load checkpoints you created yourself, or that come from a maintainer
+    you trust, on a machine where you accept that trust boundary.
+
+  • Do not treat third-party .pkl / checkpoint folders as “just data” in
+    security-sensitive environments.
+
+For a future hardening path, the tokenizer could be serialized as JSON plus
+vocabulary tables instead of pickle; that would remove the pickle execution risk
+for the tokenizer half of each checkpoint.

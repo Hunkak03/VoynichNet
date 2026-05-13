@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Voychinet runtime / artifacts
+logs/
+outputs/
+data/*.pdf
+data/*.docx
+data/*.epub
+*.log
+
+# Checkpoints (large; keep registry locally if you want — uncomment to track)
+checkpoints/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

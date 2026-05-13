@@ -1,0 +1,13 @@
+{
+  "theme": "matrix",
+  "language": "es",
+  "model_preset": "B",
+  "seq_len": 64,
+  "batch_size": 128,
+  "show_clock": true,
+  "auto_save": true,
+  "max_gen_hist": 20,
+  "web_timeout": 10,
+  "corpus_names": [],
+  "training_seed": 12
+}

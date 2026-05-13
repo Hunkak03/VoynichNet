@@ -1,0 +1,24 @@
+Voychinet — Terminal requirements (public / support)
+====================================================
+
+The live status-bar clock uses ANSI escape sequences (cursor save/restore,
+cursor position, erase-in-line). For correct behaviour:
+
+  • Windows: use Windows Terminal, or ConHost with VT processing enabled.
+    The application calls the Windows API to enable VT mode when possible.
+
+  • macOS / Linux: any common terminal emulator (xterm-256color, iTerm2,
+    gnome-terminal, etc.) is typically sufficient.
+
+  • Pipes / non-TTY stdout (CI, redirected logs): the clock thread does not
+    start; the UI still runs with a static time on the status line.
+
+If the live clock is enabled but the terminal cannot support VT sequences,
+Voychinet shows a short notice and falls back to static time until you use a
+compatible terminal.
+
+Optional document readers / web import (install as needed):
+  torch, requests, beautifulsoup4, lxml, pdfplumber, python-docx,
+  ebooklib, striprtf
+
+See requirements.txt in the project root for a minimal dependency list.
